@@ -1,0 +1,15 @@
+.tag-btn {
+    padding: 10px;
+    width: 47%;
+    background-color: #750074;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px #0000005b;
+    transition: .3s;
+}
+
+.tag-btn:hover {
+    background-color: #61015f;
+}
