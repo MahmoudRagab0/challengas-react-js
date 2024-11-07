@@ -1,7 +1,16 @@
+.box-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 10px;
+    border: 5px solid #007575;
+    padding: 10px;
+}
+
 .tag-btn {
     padding: 10px;
-    width: 47%;
     background-color: #750074;
+    font-size: 25px;
     color: #fff;
     border: none;
     cursor: pointer;

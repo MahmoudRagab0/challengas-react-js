@@ -1,4 +1,5 @@
-export default function Post() {
+export default function Post({ children, title, content = 'no content' }) {
+
     const post_style = {
         textAlign: "center",
         padding: "15px",
@@ -7,9 +8,10 @@ export default function Post() {
     }
     return (
         <div style={post_style}>
-            <h2>This is the post title</h2>
-            <hr />
-            <p>This is the post body</p>
+            {children}
+            <h2>{title}</h2>
+            <hr style={{ margin: "10px" }} />
+            <p>{content}</p>
         </div>
     )
 }

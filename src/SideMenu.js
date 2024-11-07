@@ -1,26 +1,16 @@
 import TagButton from "./TagButton"
 
 export default function SideMenu() {
-    const side_menu_style = {
-        display: 'flex',
-        justifyContent: "center",
-        flexWrap: "wrap",
-        gap: "10px",
-        border: "5px solid #007575",
-        padding: "10px",
-
-    }
     return (
-        <div style={side_menu_style}>
-            <TagButton />
-            <TagButton />
-            <TagButton />
-            <TagButton />
-            <TagButton />
-            <TagButton />
-            <TagButton />
-            <TagButton />
-            <TagButton />
+        <div className="box-btns">
+            <TagButton title='جديده' />
+            <TagButton title='الاكثر قراءه'>
+            <div>
+                <span>🔥🔥🔥</span>
+                <img style={{ width: "100%" }} src="https://st3.depositphotos.com/5852012/15878/v/1600/depositphotos_158781058-stock-illustration-photo-gallery-flat-icon-with.jpg" alt="img"/>
+            </div>
+            </TagButton>
+            <TagButton title='مقالات مميزه' />
         </div>
     )
 }
